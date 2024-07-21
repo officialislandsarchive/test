@@ -1,76 +1,63 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
 }
 
-.app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+#app {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
     text-align: center;
 }
 
-header {
-    background-color: #00c300;
-    color: white;
-    padding: 10px;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.balance-display {
-    margin-bottom: 20px;
-}
-
 #balance {
-    font-size: 24px;
-    color: green;
+    text-align: center;
+    margin: 20px 0;
 }
 
-.actions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
+#transactions {
+    margin: 20px 0;
 }
 
-button {
+#transaction-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transaction-list li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
     padding: 10px;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#actions {
+    text-align: center;
+}
+
+#add-transaction {
+    padding: 10px 20px;
+    background-color: #00c853;
     color: #fff;
-    background-color: #00c300;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #00a300;
-}
-
-footer {
-    background-color: #00c300;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.hidden-section {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hidden-section input {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
+#add-transaction:hover {
+    background-color: #00b248;
 }
