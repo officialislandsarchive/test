@@ -8,16 +8,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
-
-.header {
-    background-color: #00c300;
-    color: white;
-    padding: 10px;
     text-align: center;
 }
 
-.content {
+header {
+    background-color: #00c300;
+    color: white;
+    padding: 10px;
+}
+
+main {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -25,13 +25,8 @@ body {
     justify-content: center;
 }
 
-.balance-section, .add-money-section {
-    display: none;
-    text-align: center;
-}
-
-.balance-section.active, .add-money-section.active {
-    display: block;
+.balance-display {
+    margin-bottom: 20px;
 }
 
 #balance {
@@ -39,10 +34,11 @@ body {
     color: green;
 }
 
-.add-money-section input {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -59,23 +55,22 @@ button:hover {
     background-color: #00a300;
 }
 
-.footer {
+footer {
+    background-color: #00c300;
+    color: white;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    background-color: #00c300;
 }
 
-.footer button {
-    background-color: #fff;
-    color: #00c300;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.hidden-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer button:hover {
-    background-color: #00a300;
-    color: #fff;
+.hidden-section input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
