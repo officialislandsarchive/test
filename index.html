@@ -4,42 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Cash App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="app-container">
+    <div id="app">
         <header>
-            <h1>Cash App</h1>
+            <h1>Fake Cash App</h1>
         </header>
         <main>
-            <div class="balance-display">
-                <h2>Your Balance</h2>
-                <h3 id="balance">$0.00</h3>
+            <div id="balance">
+                <h2>Balance: $<span id="balance-amount">0.00</span></h2>
             </div>
-            <div class="actions">
-                <button>Request</button>
-                <button>Pay</button>
-                <button>Get Free Card</button>
-                <button>Add Money</button>
-                <button>Withdraw</button>
-                <button>Savings</button>
-                <button>Paychecks</button>
-                <button>Bitcoin</button>
-                <button>Stocks</button>
+            <div id="transactions">
+                <h2>Transactions</h2>
+                <ul id="transaction-list">
+                </ul>
             </div>
-            <div class="hidden-section" id="hidden-section">
-                <input type="number" id="fake-amount" placeholder="Enter amount">
-                <button onclick="updateBalance()">Set Balance</button>
+            <div id="actions">
+                <button id="add-transaction">Add Transaction</button>
             </div>
         </main>
-        <footer>
-            <button>Home</button>
-            <button>Activity</button>
-            <button>My Cash</button>
-            <button>Investing</button>
-            <button>Search</button>
-        </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
