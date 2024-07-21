@@ -8,27 +8,37 @@
 </head>
 <body>
     <div class="app-container">
-        <div class="header">
+        <header>
             <h1>Cash App</h1>
-        </div>
-        <div class="content">
-            <div class="balance-section">
+        </header>
+        <main>
+            <div class="balance-display">
                 <h2>Your Balance</h2>
                 <h3 id="balance">$0.00</h3>
-                <button onclick="showAddMoney()">Add Money</button>
             </div>
-            <div class="add-money-section" id="add-money-section">
-                <h2>Add Money</h2>
-                <input type="number" id="amount" placeholder="Enter amount">
-                <button onclick="updateBalance()">Update Balance</button>
+            <div class="actions">
+                <button>Request</button>
+                <button>Pay</button>
+                <button>Get Free Card</button>
+                <button>Add Money</button>
+                <button>Withdraw</button>
+                <button>Savings</button>
+                <button>Paychecks</button>
+                <button>Bitcoin</button>
+                <button>Stocks</button>
             </div>
-        </div>
-        <div class="footer">
-            <button onclick="showHome()">Home</button>
-            <button onclick="showPay()">Pay</button>
-            <button onclick="showRequest()">Request</button>
-            <button onclick="showCard()">Card</button>
-        </div>
+            <div class="hidden-section" id="hidden-section">
+                <input type="number" id="fake-amount" placeholder="Enter amount">
+                <button onclick="updateBalance()">Set Balance</button>
+            </div>
+        </main>
+        <footer>
+            <button>Home</button>
+            <button>Activity</button>
+            <button>My Cash</button>
+            <button>Investing</button>
+            <button>Search</button>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
